@@ -1,0 +1,10 @@
+.navigationContainer {
+  left: 0;
+  padding-top: 50px;
+  width: 100px;
+  display: grid;
+}
+
+.buttonContainer{
+  margin: 10px;
+}
