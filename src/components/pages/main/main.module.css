@@ -1,0 +1,28 @@
+.mainPageContainer {
+  display: grid;
+  grid-row-gap: 10px;
+  justify-content: center;
+  grid-template-rows: 150px 150px;
+  align-content: center;
+}
+
+.mainPageItem {
+  padding: 10px;
+  border: black 3px solid;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  grid-column-gap: 20px;
+  cursor: pointer;
+}
+
+.mainPageItem svg {
+  height: 70px;
+  width: 70px;
+}
+
+.itemDescription {
+  display: grid;
+  width: 100%;
+  text-align: left;
+}

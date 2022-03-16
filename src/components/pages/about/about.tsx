@@ -1,10 +1,15 @@
-import { useSelector } from "react-redux";
-import { SystemState } from "../../../state/reducers";
+import styles from "./about.module.css";
+import {ReactComponent as CatImage } from "../../../images/cat.svg";
+import { messages } from "./messages";
 
 export const AboutPage = () => {
-  const page = useSelector((state: SystemState) => state.app.page);
-
   return (
-  <>{page}</>
-  )
-}
+    <div className={styles.aboutContainer}>
+      <div className={styles.description}>
+        <h2>{messages.mainDescription}</h2>
+        <p>{messages.additionalDescription}</p>
+      </div>
+      <CatImage />
+    </div>
+  );
+};
