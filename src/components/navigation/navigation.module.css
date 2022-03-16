@@ -1,8 +1,6 @@
 .navigationContainer {
-  left: 0;
-  padding-top: 50px;
-  width: 100px;
-  display: grid;
+  padding: 50px 0;
+  justify-content: center;
 }
 
 .buttonContainer{

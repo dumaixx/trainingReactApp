@@ -3,20 +3,20 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 type NullableType<T> = T | null;
 
 interface IAppState {
-  page: NullableType<string>;
+  isAboutPageAvaliable: boolean;
 }
 
 
 const initialState: IAppState = {
-  page: null,
+  isAboutPageAvaliable: true,
 };
 
 const appSlice = createSlice({
   name: "app",
   initialState,
   reducers: {
-    setPage: (state, action: PayloadAction<string>) => {
-      state.page = action.payload;
+    setAboutPageAccess: (state, action: PayloadAction<boolean>) => {
+      state.isAboutPageAvaliable = action.payload;
     },
   },
 });
